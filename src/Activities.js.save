@@ -1,0 +1,28 @@
+import React, { useState , PureComponent } from 'react'
+import ReactDOM from 'react-dom'
+import JSONDATA from './city.json'
+
+class Activities extends PureComponent{
+	render(){
+		return(
+			<div className="activities">
+				<input type="text" placeholder="City here" onChange={event => {setSearchTerm(event.target.value)}}>
+				{JSONDATA.filter((val) => {
+					if(searchTerm => ""){
+						return val
+					}else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
+						return val
+					}
+				}).map((val, key) => {
+					return (
+						<div className="city" key={key}>
+							<p>{val.name}</p>
+						</div>
+					)
+				})}
+			</div>
+		)
+	}
+}
+
+export default Activities

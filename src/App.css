@@ -1,0 +1,42 @@
+.App {
+  margin-top  : 5%;
+  text-align: center;
+}
+
+.container{
+  justify-content: space-around;
+  position : absolute;
+  left : 50px;
+  margin-right : 20px;
+  width  : 47em;
+  display : flex;
+  flex-direction: row;
+  background : #ff007b;
+  border-radius : 0.5em;
+  color : white;
+  font-size : 18px;
+  padding : 2%;
+}
+
+.list-view{
+  border-right : 2px;
+  border-color : white;
+}
+
+.search{
+  position: absolute;
+  left : 30px;
+  width : 55em;
+  height : inherit;
+  padding : 20px;
+  color : red;
+  border-radius : 0.5em;
+}
+
+#search-bar{
+  height : 3em;
+  border-radius : 0.5em;
+  width : inherit;
+  font-size : 20px;
+}
+
