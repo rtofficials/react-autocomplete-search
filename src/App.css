@@ -1,18 +1,18 @@
 .App {
   margin-top  : 5%;
   text-align: center;
+  align-self: center;
 }
 
 .container{
   justify-content: space-around;
   position : absolute;
-  left : 50px;
-  top : 10%;
+  top : 130px;
   display : flex;
   flex-direction: row;
   font-size : 18px;
-  padding : 2%;
-  width : 100%;
+  padding-top : 2%;
+  width : 1000px;
 }
 
 .list-view{
@@ -24,8 +24,8 @@
 
 .search{
   position: absolute;
-  left : 30px;
-  width : 55em;
+  left : 25px;
+  width : 950px;
   height : inherit;
   padding : 20px;
   color : red;
@@ -39,24 +39,18 @@
   font-size : 20px;
 }
 
-.activities{
-  border : 5px;
-  width : 26em;
-  border : 2px solid #ff007b;
-  box-shadow : 10px 10px #ff007b 20%;
-  border-radius : 0.5em;
-}
 
-.item{
-  background: #ff007b;
-  margin : 10px;
+.list-block{
+  background: #7adbff;
   padding-top : 3%;
   padding-left : 10%;
   border-radius : 0.5em;
   font-size : 20px;
-  color : white;
-  width : 19.5em;
+  color : black;
+  width : 390px;
+  height : 525px;
   align-self: center;
+  overflow-y : scroll;
 }
 
 .city-item{

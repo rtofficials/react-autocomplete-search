@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Search from './Search'
-import CityListView from './CityListView'
 import Activities from './Activities'
+import CityListView from './CityListView'
 import './App.css';
 
 
@@ -11,7 +11,7 @@ class App extends Component {
         <div className="App">
     		<Search />
     		<div className="container">
-          		<CityListView /><Activities />
+          		<CityListView /> <Activities />
           	</div>
         </div>
     );
